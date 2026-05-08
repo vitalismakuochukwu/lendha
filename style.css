@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+       .navbar {
+            width: 1440px;
+            height: 80px;
+            opacity: 1;
+            position: relative;
+            left: -0.08px;
+            background-color: #1A1F4C;
+        }
+
+.logo {
+  position: absolute;
+  width: 106px;
+  height: 44px;
+  top: 18px;
+  left: 101.92px;
+  opacity: 1;
+}
+
+.nav-links {
+  position: absolute;
+  top: 32px;
+  left: 360px; /* Approximated to center evenly */
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  
+}
+
+.nav-home {
+font-family: Poppins;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 2%;
+color: #F5A831;
+ text-decoration: none;
+}
+
+.nav-item {
+  /* font-family: 'Poppins', sans-serif;
+  font-weight: 400; */
+font-family: Poppins;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 2%;
+color: #F4F7FF;
+text-decoration: none;
+
+
+}
+
+.login {
+  position: absolute;
+  top: 32px;
+  left: 1100px; /* Approximated distance from the sign-up button */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.signup-btn {
+  position: absolute;
+  width: 141px;
+  height: 43px;
+  top: 18.5px;
+  left: 1196.92px;
+  opacity: 1;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #1A1F4C;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 1440px;
+  height: 650px;
+}
+
+.hero-title {
+  position: absolute;
+  top: 222px; /* Estimated spacing above the button */
+  left: 102px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  color: #1A1F4C;
+  
+}
+
+.hero-description {
+  position: absolute;
+  top: 376px; /* Estimated spacing above the button */
+  left: 102px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  color: #1A1F4C;
+
+}
+
+.hero-btn {
+  position: absolute;
+  top: 454.62px;
+  left: 102px;
+  width: 191px;
+  height: 55px;
+  border-radius: 27.5px;
+  background-color: #1A1F4C; /* Matching primary brand color */
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+
+
+}
+
+.hero-btn-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  padding-left: 32px;
+}
+
+.hero-btn-circle {
+  position: absolute;
+  top: 4px;
+  left: 141px;
+  width: 47px;
+  height: 47px;
+  background-color: #F5A831;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.handle-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.learn-more {
+  position: absolute;
+  top: 473px;
+  left: 325px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: #1A1F4C;
+  text-decoration: none;
+}
+
+.son-image {
+  position: absolute;
+  width: 559px;
+  height: 534px;
+  top: 145px;
+  left: 853.42px;
+  opacity: 1;
+
+}
