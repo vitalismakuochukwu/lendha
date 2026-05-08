@@ -11,8 +11,9 @@
 
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <img src="logo.png" alt="Logo" class="logo">
+        <img src="image.png" alt="Menu" class="menu-icon" id="menu-toggle">
         <ul class="nav-links">
             <li><a href="#" class="nav-home">Home</a></li>
             <li><a href="#" class="nav-item">Loans</a></li>
@@ -25,8 +26,7 @@
 
     <section class="hero">
         <h1 class="hero-title">Built for growth.<br>Built for your small business.</h1>
-        <h4 class="hero-description">Lending and payment options that make it easy to run your business<br>with confidence.</h4>
-        
+        <p class="hero-description">Lending and payment options that make it easy to run your business<br>with confidence.</p>
         <button class="hero-btn">
             <span class="hero-btn-text">Get Started</span>
             <div class="hero-btn-circle">
@@ -34,8 +34,15 @@
             </div>
         </button>
         <a href="#" class="learn-more">Learn more</a>
-
         <img src="son.png" alt="Son" class="son-image">
     </section>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbar = document.getElementById('navbar');
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

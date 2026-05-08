@@ -10,11 +10,11 @@ body {
 
        .navbar {
             width: 1440px;
-            height: 80px;
+            height: 65px;
             opacity: 1;
             position: relative;
             left: -0.08px;
-            background-color: #1A1F4C;
+            background-color: #ffffff;
         }
 
 .logo {
@@ -194,4 +194,174 @@ text-decoration: none;
   left: 853.42px;
   opacity: 1;
 
+}
+
+@media (min-width: 769px) {
+  .menu-icon {
+    display: none;
+  }
+}
+
+/* --- Mobile Responsive Styles --- */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden; /* Continue to prevent horizontal scroll */
+    overflow-y: auto; /* Re-enable vertical scrolling for mobile content */
+  }
+
+  /* Navbar Adjustments */
+  .navbar {
+    width: 100%;
+    left: 0;
+  }
+
+  .logo {
+    content: url("end.png");
+    width: 34.7px;
+    height: 35px;
+    top: 10.33px;
+    left: 15.96px;
+    opacity: 1;
+  }
+
+  .menu-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 19.79px;
+    left: 338.96px;
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .nav-links,
+  .login,
+  .signup-btn {
+    display: none; /* Hide all nav content initially */
+  }
+
+  /* Active Mobile Menu Styles */
+  .navbar.active {
+    height: auto;
+    padding-top: 80px; /* Space for the logo and menu icon */
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1A1F4C;
+  }
+
+  .navbar.active .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: static;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .navbar.active .login {
+    display: block;
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  .navbar.active .signup-btn {
+    display: flex;
+    position: static;
+  }
+
+  /* Hero Section Stacking */
+  .hero {
+    width: 100%;
+    height: auto; /* Allow height to grow based on content */
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    position: static; /* Override absolute positioning context */
+  }
+
+  .hero-title,
+  .hero-description,
+  .hero-btn,
+  .learn-more,
+  .son-image {
+    position: static; /* Reset positioning to flow naturally */
+    width: 90%;
+    height: auto;
+    text-align: center;
+    left: auto;
+    top: auto;
+  }
+
+  .hero-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 142%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #1A1F4C;
+  }
+
+  .hero-description {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #1A1F4C;
+  }
+
+  .hero-btn {
+    width: 172px;
+    height: 43px;
+    border-radius: 21.74px;
+    background-color: #1A1F4C;
+    margin: 0 auto; /* Center the button */
+    justify-content: center; /* Center text within button */
+    position: relative;
+  }
+
+  .hero-btn-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    padding-left: 0;
+  }
+
+  .hero-btn-circle {
+    width: 36.75px;
+    height: 36.75px;
+    background-color: #F5A831;
+    position: absolute;
+    top: 2.75px;
+    left: 133.23px;
+  }
+
+  .handle-icon {
+    width: 12.51px;
+    height: 12.51px;
+  }
+
+  .learn-more {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #1A1F4C;
+  }
+
+  .son-image {
+    width: 352.02px;
+    height: 280.87px;
+  }
 }
