@@ -29,7 +29,7 @@ body {
 .nav-links {
   position: absolute;
   top: 32px;
-  left: 360px; /* Approximated to center evenly */
+  left: 360px; 
   display: flex;
   gap: 32px;
   list-style: none;
@@ -63,7 +63,7 @@ text-decoration: none;
 .login {
   position: absolute;
   top: 32px;
-  left: 1100px; /* Approximated distance from the sign-up button */
+  left: 1100px; 
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -105,7 +105,7 @@ text-decoration: none;
 
 .hero-title {
   position: absolute;
-  top: 222px; /* Estimated spacing above the button */
+  top: 222px; 
   left: 102px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -118,7 +118,7 @@ text-decoration: none;
 
 .hero-description {
   position: absolute;
-  top: 376px; /* Estimated spacing above the button */
+  top: 376px; 
   left: 102px;
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
@@ -136,7 +136,7 @@ text-decoration: none;
   width: 191px;
   height: 55px;
   border-radius: 27.5px;
-  background-color: #1A1F4C; /* Matching primary brand color */
+  background-color: #1A1F4C;
   color: #ffffff;
   border: none;
   cursor: pointer;
@@ -205,14 +205,16 @@ text-decoration: none;
 /* --- Mobile Responsive Styles --- */
 @media (max-width: 768px) {
   body {
-    overflow-x: hidden; /* Continue to prevent horizontal scroll */
-    overflow-y: auto; /* Re-enable vertical scrolling for mobile content */
+    overflow-x: hidden; 
+    overflow-y: auto; 
   }
 
   /* Navbar Adjustments */
   .navbar {
     width: 100%;
     left: 0;
+    background-color: #ffff;
+
   }
 
   .logo {
@@ -237,13 +239,13 @@ text-decoration: none;
   .nav-links,
   .login,
   .signup-btn {
-    display: none; /* Hide all nav content initially */
+    display: none; 
   }
 
   /* Active Mobile Menu Styles */
   .navbar.active {
     height: auto;
-    padding-top: 80px; /* Space for the logo and menu icon */
+    padding-top: 80px; 
     padding-bottom: 40px;
     display: flex;
     flex-direction: column;
@@ -274,13 +276,13 @@ text-decoration: none;
   /* Hero Section Stacking */
   .hero {
     width: 100%;
-    height: auto; /* Allow height to grow based on content */
+    height: auto; 
     padding: 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 25px;
-    position: static; /* Override absolute positioning context */
+    position: static; 
   }
 
   .hero-title,
@@ -288,7 +290,7 @@ text-decoration: none;
   .hero-btn,
   .learn-more,
   .son-image {
-    position: static; /* Reset positioning to flow naturally */
+    position: static; 
     width: 90%;
     height: auto;
     text-align: center;
@@ -321,8 +323,8 @@ text-decoration: none;
     height: 43px;
     border-radius: 21.74px;
     background-color: #1A1F4C;
-    margin: 0 auto; /* Center the button */
-    justify-content: center; /* Center text within button */
+    margin: 0 auto; 
+    justify-content: center; 
     position: relative;
   }
 
