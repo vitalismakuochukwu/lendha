@@ -214,7 +214,8 @@ text-decoration: none;
     width: 100%;
     left: 0;
     background-color: #ffff;
-
+    position: absolute;
+    z-index: 999;
 
   }
 
